@@ -1,0 +1,100 @@
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  width: 100%;
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  padding: 25% 0 10%;
+}
+
+.header p {
+  font-size: 0.9rem;
+  margin: 2rem;
+}
+
+.header h2,
+.header h3 {
+  color: var(--primary-color);
+  margin: 1rem;
+}
+
+.header h5 {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: var(--color-white);
+}
+
+.header__image {
+  background-image: linear-gradient(10deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/welcome.webp);
+  background-size: cover;
+  text-align: center;
+  padding: 20%;
+}
+
+.header__container {
+  width: 50%;
+  margin-bottom: 3rem;
+}
+
+.header__mission {
+  width: 50%;
+  margin: 5% 25%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: var(--transition);
+}
+
+.header__mission p {
+  opacity: 0.7;
+}
+.header__results {
+  text-align: center;
+}
+
+.header__result {
+  width: 100%;
+  height: 93%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.header__result img {
+  width: 50%;
+  aspect-ratio: 1/2;
+  box-shadow: 0 12px 28px 0px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+    0 25px 20px -20px rgba(0, 0, 0, 0.45);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  transition: var(--transition);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: var(--primary-color);
+  transition: var(--transition);
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .header__result img {
+    width: 70%;
+  }
+
+  .header__mission {
+    width: 90%;
+    margin: 10% 5%;
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .header__result img {
+    width: 100%;
+  }
+}
